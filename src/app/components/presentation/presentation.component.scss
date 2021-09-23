@@ -1,0 +1,256 @@
+
+/*
+@font-face {
+  font-family: dinpro;
+  src: url("../../../assets/fonts/DINPro-Regular.otf");
+}
+@font-face {
+  font-family: dinproBold;
+  src: url("../../../assets/fonts/DINPro-Bold.otf");
+}*/
+
+html {
+  font-family: dinpro;
+}
+
+/* TEST LIEN EXTRA TEST */ 
+
+
+.container-lien {
+  width: 440px;
+  margin: auto;
+}
+
+.lien-extra { 
+  display: inline;
+}
+
+.lien-extra:hover a{
+  color: black !important;
+}
+
+.lien-extra::after {  
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 0 auto; 
+  background: black; 
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 2px;
+  
+}
+
+.lien-extra:hover::after {
+  transform: scale(1);
+}
+
+/* FIN TEST LIEN EXTRA TEST */ 
+
+
+
+.decale {
+  margin-top: -85px;
+}
+
+.satellite {
+  position: fixed;
+  top: 250px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
+
+.socle {
+  display: flex;
+  margin-top: 50px;
+  /*margin-top: 50px;*/
+
+}
+.left {
+  display: flex;
+  width: 25%;
+  height: 80vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left img {
+  width: 100%;
+  height: 70%;
+  padding-top: 2.8rem;
+  border-radius: 10px 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2.5rem !important;
+  font-size: 25px !important;
+  line-height: 1.5;
+  justify-content: center;
+}
+
+h4 {
+  text-align: justify;
+  color: rgb(31, 40, 51);
+}
+
+h3 {
+  color: rgb(31, 40, 51);
+}
+
+.right h2 {
+  font-size: 2.5rem !important;
+}
+
+.fontperso {
+  font-family: fairplayRegular;
+}
+
+
+.stade {
+  width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.submain .zetitre {
+  font-size: 4rem;
+  -webkit-text-fill-color: rgb(141, 182, 66);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+  margin-right: -200px;
+  line-height: 2em;
+  -webkit-transform:scaleY(2);
+  -moz-transform:scaleY(2);
+  -o-transform:scaleY(2);
+
+}
+
+.satellite p {
+  color: #ffffff;
+}
+
+.subtitre {
+  text-align: center;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.subtitre h1 {
+  font-size: 6rem !important;
+}
+
+.ferme {
+
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+}
+/*
+.ferme:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(2);
+}*/
+
+.col-ferme {
+  overflow: hidden;
+  padding: 0;
+}
+
+.carroussel {
+  display: flex;
+}
+
+.item {
+  
+}
+
+.image {
+  //flex-grow: 1;
+  display: flex;
+  //flex-shrink: 1;
+  width: 50%;
+  flex-direction: column;
+}
+
+.image:nth-child(1) {
+  margin-right: 1%;
+}
+
+
+.image:nth-child(3) {
+  margin-left: 1%;
+}
+
+.image-custom {
+  
+  width: 50%;
+  margin: 50px auto;
+  
+}
+
+.espaceur {
+  margin-bottom: 100px;
+}
+
+
+
+
+@media screen and (max-width: 1199px) {
+
+  .decale {
+    margin-top: 0;
+  }
+
+}
+
+
+@media screen and (max-width: 1435px) {
+  .stade {
+    width: calc(100% - 75px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submain .zetitre {
+    font-size: 3.5rem;
+    -webkit-text-fill-color: rgb(141, 182, 66);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.2);
+    margin-right: -200px;
+    line-height: 2em;
+    -webkit-transform:scaleY(2);
+    -moz-transform:scaleY(2);
+    -o-transform:scaleY(2);
+
+  }
+
+
+}
+
+
+.zeTitre {
+  color: #7B0D1E;
+  
+}
+
+.strat {
+  position: relative;
+  margin-bottom: 150px;
+}
+.strat h1 {
+  margin-left: 50px;
+  font-family: dinproBold;
+  font-size: 10.5vw;
+  line-height: 120%;
+}

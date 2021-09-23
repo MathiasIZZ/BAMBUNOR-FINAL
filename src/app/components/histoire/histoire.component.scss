@@ -1,0 +1,256 @@
+section {
+  margin-bottom: 75px;
+  user-select: none;
+}
+
+.no-espace {
+  padding: 0 !important;
+}
+
+.carreblue {
+  background-color: #314d91;
+  margin-top: -100px;
+  margin-right: -80px;
+}
+
+.icone {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.galaxy {
+  height: 100%;
+  margin-top: 100px;
+}
+
+.para {
+  
+  padding: 10% 5%;
+}
+
+
+
+
+
+/* TEST LIEN EXTRA TEST */ 
+
+
+.container-lien {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.lien-extra { 
+  display: inline;
+}
+
+.lien-extra:hover a{
+  color: black !important;
+}
+
+.lien-extra::after {  
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 0 auto; 
+  background: black; 
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 2px;
+  
+}
+
+.lien-extra:hover::after {
+  transform: scale(1);
+}
+
+/* FIN TEST LIEN EXTRA TEST */ 
+
+
+
+
+
+.satellite {
+  position: fixed;
+  top: 255px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
+
+.strat {
+  position: relative;
+}
+
+.strat h1 {
+  margin-left: 50px;
+  font-family: dinproBold;
+  font-size: 10.5vw;
+  line-height: 120%;
+}
+
+.plante {
+  //margin-top: 185px;
+  height: auto;
+}
+
+#plante2 {
+  margin-top: 100px;
+}
+.espace {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.espaceleft {
+  min-height: 1px;
+  width: 15%;
+  float: left;
+}
+
+
+
+.espaceright h2 {
+  text-transform: none;
+  font-size: 30px;
+  line-height: 150%;
+  
+}
+
+
+.clear{
+  clear: left;
+}
+
+.visu {
+  position: relative;
+}
+.img {
+  display: block;
+  padding-left: 399px;
+}
+.img img {
+  display: block;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.texte1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.texte1 h2 {
+  font-size: 30px;
+  font-family: dinproBold;
+  margin-bottom: 70px;
+}
+
+.texte1 p {
+  color: wheat;
+  font-family: dinpro;
+}
+
+.partie {
+  width: 33.33%;
+  display: inline-block;
+  border-right: 1px solid #e4e4e5;
+  padding: 2%;
+}
+
+.tween {
+
+}
+
+.tween1 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.tween2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 75px;
+
+}
+
+.haut {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.bas {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10%;
+  text-align: justify;
+}
+
+
+.haut img {
+  width: 100%;
+}
+
+.bas p {
+  font-size: 1.5rem;
+}
+
+h3 {
+  color: #121112;
+}
+
+#section-3 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../../../assets/img/cueillette-foret.jpg) no-repeat center;
+  background-attachment: scroll, scroll;
+  background-size: auto, auto;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5%;
+  text-align: center;
+  height: 100%;
+  margin: 0 5% 0 5%;
+  border-radius: 50px;
+}
+.ciel {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  align-items: center
+}
+
+
+.bg-plante {
+  background-color: #1f2833;
+  border-radius: 50px;
+}
+
+.bloc {
+  font-size: 30px;
+  font-weight: 800;
+  color: #D8DAD3 !important;
+}
+
+.blocs {
+  font-size: 30px;
+  //font-weight: 800;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+

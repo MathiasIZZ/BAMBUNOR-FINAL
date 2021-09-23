@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+@font-face {
+  font-family: dinpro;
+  src: url("assets/fonts/DINPro-Black.otf");
+}
+
+@font-face {
+  font-family: dinproBold;
+  src: url("assets/fonts/DINPro-Bold.otf");
+}
+
+@font-face {
+  font-family: fairplayRegular;
+  src: url("assets/fonts/PlayfairDisplay-Medium.ttf");
+}
+
+@font-face {
+  font-family: fairplayBold;
+  src: url("assets/fonts/DINPro-Bold.otf");
+}
+
+
+
+
+/*
+html {
+  scrollbar-width: none;
+}
+
+.scrollbar {
+  width: 15px;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(to top, #99b6e6, #4364f7, #add3ff);
+
+}
+
+.clickScrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: rgba(170, 170, 170, 0.356);
+}
+*/
+
+
+
+/* ZONE CSS DESIGN BACKGROUND SCROLL */
+
+
+
+body {
+  background-color: #1f2833;
+}
+
+/*
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*/
+
+#active-nav {
+  color: white;
+}

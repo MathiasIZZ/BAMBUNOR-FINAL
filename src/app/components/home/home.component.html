@@ -1,0 +1,169 @@
+<div class="section" style="margin-top: 250px;">
+
+
+<!-- container -->
+<div class="container">
+
+  <div class="stade">
+    <div class="socle">
+      <div class="center">
+        <div class="sub">
+          <h1 class="fontperso"><span style="color: #493c26">Que vous soyez chef d'un restaurant gourmet ou simple  particulier, invitez ce met délicat à votre table !</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row" style="margin-top: 50px">
+    <!-- shop -->
+    <div class="col-md-4 col-xs-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img src="assets/img/bambou-product.jpg" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Le produit</h3>
+          <a href="#" class="cta-btn">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- /shop -->
+
+    <!-- shop -->
+    <div class="col-md-4 col-xs-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img src="assets/img/bambou-product.jpg" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Les qualités nutritives</h3>
+          <a href="#" class="cta-btn">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- /shop -->
+
+    <!-- shop -->
+    <div class="col-md-4 col-xs-6">
+      <div class="shop">
+        <div class="shop-img">
+          <img src="assets/img/bambou-product.jpg" alt="">
+        </div>
+        <div class="shop-body">
+          <h3>Les qualités gustatives</h3>
+          <a href="#" class="cta-btn">En savoir plus <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- /shop -->
+  </div>
+
+  <div class="stade">
+
+    <div class="socle" style="margin-top: 50px;">
+      <div class="right">
+        <h2 class="fontperso"><span style="color: #493c26">« BAMBUNOR LDA » : Une exploitation, innovante en Europe.</span><span>
+      En 2015, nous avons plantés, en agriculture biologique, 3 hectares de Bambous au Nord du Portugal, et avons crée BAMBUNOR LDA.</span></h2>
+        <p class="fontperso">Notre mission: Vous faire connaître un produit rare aux multiples vertus alimentaires : les pousses de bambous fraîches.</p>
+      </div>
+      <div class="left">
+        <img src="assets/img/bambou.jpg" alt="Un Âne">
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- row
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6" *ngFor="let p of products">
+          <div class="card my-2">
+            <img [src]="p.image" alt="{{ p.name }}" class="card-img-top" width="200px" style="cursor: pointer;" (click)="selectProduct(p.id)">
+            <div class="card-header">
+              <div class="card-title">
+                <p>{{ p.name | titlecase }}</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>{{ p.description.substr(0, 50) }} ...</p>
+              <p class="lead">{{ p.price | currency: 'EUR' }}</p>
+            </div>
+            <div class="row d-flex justify-content-center border-primary my-3">
+              <div class="col-md-6">
+
+                <button class="btn btn-outline-primary btn-sm btn-block"
+                [class.disabled]="p.quantity < 1"
+                [class.btn-outline-danger]="p.quantity < 1"
+                        (click)="addToCart(p.id)"
+                >
+                {{ p.quantity < 1 ? "stock épuisée" : "Ajouter au panier"}} ({{ p.quantity }})
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+
+
+  <!-- row model hors connexion -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row" style="justify-content: center">
+
+        <div class="col-md-4 col-sm-6" >
+          <div class="card my-2">
+            <img src="assets/img/bambou-product.jpg" alt="bambou" class="card-img-top" width="200px" style="cursor: pointer;" >
+            <div class="card-header">
+              <div class="card-title">
+                <p>Pousses De Bambous</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>- 40 euros / kg <br>- 30 euros à partir de 10 kg <br>- 20 euros à partir de 100 kg </p>
+              <p class="lead"></p>
+            </div>
+            <div class="row d-flex justify-content-center border-primary my-3">
+              <div class="col-md-6">
+
+                <button class="btn btn-outline-primary btn-sm btn-block"
+
+                        (click)="addToCart(2)"
+                >
+                  ajouter au panier
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- /container -->
+</div>

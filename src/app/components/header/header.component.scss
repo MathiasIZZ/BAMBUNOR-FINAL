@@ -1,0 +1,208 @@
+.noise {
+  z-index: 9000;
+  position: fixed;
+  background: url("../../../assets/img/noise-bg.png");
+  min-height: 100vh;
+  pointer-events: none;
+  top: 0;
+  opacity: 0.85;
+  left: 0;
+  background-repeat: repeat;
+  background-position: top left;
+  height: 100vh;
+  width: 100vw; 
+}
+
+
+.cart-dropdown {
+  position: absolute;
+  width: 300px;
+  background: #FFF;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 0px 2px #E4E7ED;
+  box-shadow: 0px 0px 0px 2px #E4E7ED;
+  z-index: 99;
+  right: 0;
+  opacity: 1;
+}
+
+.nav {
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.arene {
+  top: 0px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition-duration: 1s;
+  z-index: 10000;
+}
+
+.disparition {
+  top: -200px;
+  transition-duration: 1s;
+}
+
+.fond {
+  background-color: white !important;
+  transition-duration: 1.5s;
+}
+
+.arene .scrolled {
+  background: black !important;
+}
+
+a {
+  font-family: dinpro;
+}
+
+#responsive-nav  {
+  display: block;
+  margin-top: 10rem !important;
+}
+
+
+/*----------------------------*\
+	Logo
+\*----------------------------*/
+
+#header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-logo {
+  background-color: transparent;
+  position: relative;
+  height: 100px;
+}
+
+.blaze {
+  color: #ffeecf;
+  -webkit-transform: scaleY(2);
+  -moz-transform: scaleY(2);
+  -o-transform: scaleY(2);
+  font-family: dinproBold;
+  font-size: 3.2rem;
+  letter-spacing: 0.8rem;
+  text-align: center;
+}
+.sousblaze {
+  color: #ffeecf;
+  position: absolute;
+  right: 15px;
+  bottom: -5px;
+  font-family: dinproBold;
+}
+.header-logo:hover {
+  .sousblaze{
+    animation: linear 2s infinite alternate slidein;
+  }
+}
+
+@keyframes slidein{
+  from {transform: translateX(0);}
+  to   {transform: translateX(-300px);}
+}
+
+
+.header-logo .logo img {
+  display: block;
+}
+
+
+
+.Menu-list {
+
+  font-size: 4.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 872px;
+}
+
+.Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.Mask {
+
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: rgb(19,7,71);
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+
+
+
+
+.Mask span {
+  display: block;
+}
+
+
+.Mask + .Mask {
+  top: 48.9%;
+}
+
+.Mask + .Mask span {
+  transform: translateY(-49%);
+}
+
+
+.Menu-list-item:hover .Mask,
+.Menu-list-item:active .Mask {
+  color: #fff;
+  transform: skewX(12deg) translateX(5px);
+}
+
+.Menu-list-item:hover .Mask + .Mask,
+.Menu-list-item:active .Mask + .Mask {
+  color: #fff;
+  transform: skewX(12deg) translateX(-5px);
+}
+
+
+
+.Menu-list-item::before {
+
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: rgb(19,7,71);
+  transform: scale(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index:1;
+
+}
+
+.Menu-list-item:hover::before,
+.Menu-list-item:active::before {
+  transform: scale(1);
+}
+
+
+
+
+

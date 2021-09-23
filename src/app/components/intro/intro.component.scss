@@ -1,0 +1,272 @@
+
+
+h2 {
+  font-family: faiplayRegular;
+}
+
+#footer {
+  display: none !important;
+
+}
+
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000000;
+  top: 0;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  display: none !important;
+}
+
+
+video {
+  /*filter: blur(5px);*/
+  position: absolute;
+  top: 0;
+  margin: 0;
+  z-index: 500;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.onvideo {
+  /*filter: blur(5px);*/
+  position: absolute;
+  top: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 501;
+  background-color: rgb(49, 48, 48);
+  opacity: 0.5;
+}
+
+.intro {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  top: 0;
+  overflow: hidden;
+}
+
+.deco {
+  position: relative;
+  padding: 3em;
+  height: 100vh;
+  width: 100%;
+}
+
+.redeco{
+  height: 100%;
+
+  z-index: 505;
+
+}
+
+.arene{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  z-index: 600;
+  height: 100%;
+}
+
+.logo {
+  text-align: left;
+  width: auto;
+  z-index: 700;
+}
+
+
+.langue {
+  text-align: left;
+  width: auto;
+  z-index: 700;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+.selection {
+  display: flex;
+  flex-direction: row;
+
+}
+.lanav {
+  display: flex;
+}
+
+.menuLangue {
+  display: flex;
+}
+
+.menuLangue a {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.marge {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.titre1 {
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.cadre {
+  margin: 5% 0% 0% 10%;
+}
+
+.titre1 h2 {
+  -webkit-text-fill-color: transparent;                  //#8db642;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;           //#493c26;
+  font-size: 8em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+.titre2 {
+  text-align: left;
+  padding-left: 10% !important;
+  width: 100%;
+  max-width: 100%;
+}
+
+.titre2 h2 {
+
+  /* #493c26, #8db642 */
+  -webkit-text-fill-color: transparent;                  //#8db642;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #493c26;
+  font-weight: 500;
+  font-size: 8em;
+  text-transform: uppercase;
+}
+
+.monBouton {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.monBouton2 {
+  width: 120px !important;
+  background-color: #8db642;
+}
+
+.mybtn {
+  width: 100%;
+}
+
+
+  @media screen and (max-width: 1435px) {
+
+    .titre2 h2 {
+      font-size: 6em;
+      font-weight: 600;
+      text-transform: uppercase;
+
+    }
+
+    .titre1 h2 {
+      font-size: 6em;
+      font-weight: 600;
+      /*margin: 15% 0% 0% 0%;*/
+      text-transform: uppercase;
+    }
+
+  }
+
+@media screen and (max-width: 400px) {
+
+  .cadre {
+    margin: 30% 0 0 10%;
+  }
+
+  .titre2 h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #493c26;
+  }
+
+  .titre1 h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    /*margin: 15% 0% 0% 0%;*/
+    text-transform: uppercase;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
