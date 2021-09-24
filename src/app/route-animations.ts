@@ -4,7 +4,7 @@ import { trigger, transition, style, query, group, animateChild, animate, keyfra
 
 
 
-/*export const fader =
+export const fader =
   trigger('routeAnimations', [
     transition('* <=> *', [
       query(':enter, :leave', [
@@ -17,14 +17,14 @@ import { trigger, transition, style, query, group, animateChild, animate, keyfra
         }),
       ]),
       query(':enter', [
-        animate('250ms ease', style({
+        animate('4000ms ease', style({
           opacity: 1, transform: 'translateX(0)'})
         ),
       ])
     ]),
 ]);
-*/
 
+/*
 export const fader =
 
   trigger('routeAnimations', [
@@ -33,13 +33,13 @@ export const fader =
 
       style({ opacity: 0 }),
 
-      animate('1000ms ease', style({ opacity: 1 }))
+      animate('2000ms ease', style({ opacity: 1 }))
     ]),
 
     transition(' <=> *', [
 
       style({ opacity: 0 }),
 
-      animate('1000ms ease', style({ opacity: 1 }))
+      animate('2000ms ease', style({ opacity: 1 }))
     ]),
-  ]);
+  ]);*/

@@ -64,15 +64,25 @@ export class HeaderComponent implements OnInit {
     const activation = document.getElementById('active-navv');
 
     activation.addEventListener('click', () => {
+
+      window.scrollTo(0, 0);
+
       const nav = document.getElementById('navigation');
       const chargement = document.getElementById('chargement2');
+
+      nav.style.display = 'block';
+      chargement.style.display = 'none';
+
+      /*
       if (nav.style.display === 'none') {
         nav.style.display = 'block';
         chargement.style.display = 'none';
       } else {
         nav.style.display = 'none';
         chargement.style.display = 'block';
-      }
+      }*/
+
+
     });
 
     const fermeture = document.getElementById('close');

@@ -23,6 +23,10 @@ export class PresentationComponent implements OnInit {
   ngOnInit(): void {
     this.createAnim();
 
+  
+
+
+
     gsap.utils.toArray('h1').forEach( (elem) => {
 
       ScrollTrigger.create({
@@ -33,14 +37,14 @@ export class PresentationComponent implements OnInit {
           gsap.to('h1', {color: '#1f2833'});
           gsap.to('h2', {color: '#1f2833'});
           gsap.to('p', {color: '#1f2833'});
-          gsap.to('li', {color: '#1f2833'});
+         
         },
         onLeaveBack: () => {
           gsap.to('body', {backgroundColor: '#1f2833'});
           gsap.to('h1', {color: '#ffffff'}); // #ffeecf
           gsap.to('h2', {color: '#ffffff'});
           gsap.to('p', {color: '#ffffff'});
-          gsap.to('li', {color: '#ffffff'});
+          
         },
         markers: true
       });
@@ -49,11 +53,16 @@ export class PresentationComponent implements OnInit {
   }
 
 
+  
+
   // tslint:disable-next-line:typedef
   createAnim() {
     const titre = document.querySelectorAll('.anime');
     this.TL.from(titre[0], 5, {y: -100, opacity: 0});
     this.TL.play();
   }
+
+  
+
 
 }

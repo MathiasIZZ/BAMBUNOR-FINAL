@@ -137,9 +137,9 @@ video {
 }
 
 .titre1 h2 {
-  -webkit-text-fill-color: transparent;                  //#8db642;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: white;           //#493c26;
+  //-webkit-text-fill-color: transparent;                  //#8db642;
+  //-webkit-text-stroke-width: 4px;
+  //-webkit-text-stroke-color: white;           //#493c26;
   font-size: 8em;
   font-weight: 500;
   text-transform: uppercase;
@@ -156,12 +156,13 @@ video {
 .titre2 h2 {
 
   /* #493c26, #8db642 */
-  -webkit-text-fill-color: transparent;                  //#8db642;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #493c26;
+  //-webkit-text-fill-color: transparent;                  //#8db642;
+  //-webkit-text-stroke-width: 4px;
+  //-webkit-text-stroke-color: #493c26;
   font-weight: 500;
   font-size: 8em;
   text-transform: uppercase;
+  color: #8db642;
 }
 
 .monBouton {

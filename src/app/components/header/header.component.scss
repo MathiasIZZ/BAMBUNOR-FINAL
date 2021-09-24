@@ -13,6 +13,10 @@
   width: 100vw; 
 }
 
+.menu-burger {
+  width: 35px;
+}
+
 
 .cart-dropdown {
   position: absolute;
@@ -162,12 +166,12 @@ a {
 
 .Mask + .Mask span {
   transform: translateY(-49%);
-}
+} 
 
 
 .Menu-list-item:hover .Mask,
 .Menu-list-item:active .Mask {
-  color: #fff;
+  color: transparent;    //#fff;
   transform: skewX(12deg) translateX(5px);
 }
 
@@ -194,6 +198,7 @@ a {
   transform: scale(0);
   transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
   z-index:1;
+  color: transparent;
 
 }
 
