@@ -2,6 +2,15 @@
     cursor: not-allowed;
 }
 
+.satellite {
+  position: fixed;
+  color: #D8DAD3;
+  top: 255px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
 
 .socle {
   display: flex;
@@ -39,7 +48,7 @@
 }
 
 .fontperso {
-  font-family: 'dinpro';
+  font-family: 'FairPlayRegular';
 }
 
 

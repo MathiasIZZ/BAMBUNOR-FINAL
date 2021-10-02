@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 @Component({
@@ -37,6 +39,20 @@ export class HistoireComponent implements OnInit {
       });
 
     });
+
+
+/*
+    gsap.to("h1", {
+      scrollTrigger: {
+        trigger: 'h1', 
+        start: "top center",
+        markers: true, 
+        toggleActions: "restart none reverse none"
+      },
+     opacity: 1, 
+     duration: 3
+    });
+*/
 
 
 

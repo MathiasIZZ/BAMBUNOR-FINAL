@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap, TimelineMax, TweenMax, Elastic } from 'gsap';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
-
-gsap.registerPlugin(TimelineMax, TweenMax, Elastic);
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -29,7 +29,50 @@ export class IntroComponent implements OnInit {
     this.createAnim();
     this.anim1();
 
+
+    gsap.utils.toArray('h1').forEach( (elem) => {
+
+      ScrollTrigger.create({
+        trigger: 'h1',
+        start: 'top 3%',
+        onEnter: () => {
+          gsap.to('body', {backgroundColor: '#ffffff'});
+          gsap.to('h1', {color: '#1f2833'});
+          gsap.to('h2', {color: '#1f2833'});
+          gsap.to('p', {color: '#1f2833'});
+         
+        },
+        onLeaveBack: () => {
+          gsap.to('body', {backgroundColor: '#1f2833'});
+          gsap.to('h1', {color: '#ffffff'}); // #ffeecf
+          gsap.to('h2', {color: '#ffffff'});
+          gsap.to('p', {color: '#ffffff'});
+          
+        },
+        markers: true
+      });
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
+
 
   chargementSpinner() {
     const loader = document.querySelector('.loader');

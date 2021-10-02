@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
 
-gsap.registerPlugin(TimelineMax, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-presentation',
@@ -21,19 +21,18 @@ export class PresentationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    
     this.createAnim();
 
   
-
-
-
     gsap.utils.toArray('h1').forEach( (elem) => {
 
       ScrollTrigger.create({
         trigger: 'h1',
         start: 'top 10%',
         onEnter: () => {
-          gsap.to('body', {backgroundColor: '#ffffff'});
+          gsap.to('body', {backgroundColor: '#D8DAD3'});
           gsap.to('h1', {color: '#1f2833'});
           gsap.to('h2', {color: '#1f2833'});
           gsap.to('p', {color: '#1f2833'});
@@ -50,6 +49,9 @@ export class PresentationComponent implements OnInit {
       });
 
     });
+
+
+
   }
 
 

@@ -4,12 +4,14 @@
     max-width: 1200px;
     width: calc(100% - 40px);
     margin: 0 auto;
-    min-height: 100vh;
+    height: 89vh;
 }
+
 
 .groscontact {
     background-image: url("./../../../assets/img/texture-froissee.jpg");
     width: 100%;
+    padding-top: 5%;
 }
 
 .figure-contact img {
@@ -22,8 +24,6 @@
     min-height: 100%;
 
 }
-
-
 
 
 .figure-contact {
@@ -45,6 +45,7 @@
 
 p {
     padding: 35px;
+    font-size: 25px;
 }
 
 .picture {

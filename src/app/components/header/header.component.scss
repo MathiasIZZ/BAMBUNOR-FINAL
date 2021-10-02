@@ -171,13 +171,13 @@ a {
 
 .Menu-list-item:hover .Mask,
 .Menu-list-item:active .Mask {
-  color: transparent;    //#fff;
+  color: #53624e;    //#fff;
   transform: skewX(12deg) translateX(5px);
 }
 
 .Menu-list-item:hover .Mask + .Mask,
 .Menu-list-item:active .Mask + .Mask {
-  color: #fff;
+  color: #53624e;
   transform: skewX(12deg) translateX(-5px);
 }
 

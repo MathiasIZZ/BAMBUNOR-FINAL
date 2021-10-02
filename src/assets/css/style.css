@@ -429,11 +429,11 @@ textarea.input {
 }
 
 .header-links li a {
-  color: #FFF;
+  color: black;
 }
 
 .header-links li a:hover {
-  color: #D10024;
+  color: black;
 }
 
 .header-links li i {
@@ -597,7 +597,8 @@ textarea.input {
 ===========================================================*/
 
 #navigation {
-  background: #ffeecf;
+  /*background: #ffeecf;*/
+  background-image: url('./../img/texture-froissee.jpg');
   border-bottom: 2px solid #E4E7ED;
   border-top: 3px solid darkgreen;
   position: absolute;

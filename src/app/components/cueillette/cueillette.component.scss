@@ -8,6 +8,17 @@ h2 {
   color: white !important;
 }
 
+.satellite {
+  color: #ffeecf;
+  position: fixed;
+  top: 255px;
+  right: 50px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+}
+
+
 h1 {
   font-family: dinproBold;
   font-size: 10.5vw;
@@ -42,7 +53,7 @@ h4 {
 }
 
 .espace {
-  height: 15vh;
+  height: 13vh;
 }
 
 
