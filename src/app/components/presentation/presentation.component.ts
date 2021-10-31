@@ -30,24 +30,22 @@ export class PresentationComponent implements OnInit {
 
       ScrollTrigger.create({
         trigger: 'h1',
-        start: 'top 10%',
+        start: 'top 0%',
         onEnter: () => {
-          gsap.to('body', {backgroundColor: '#D8DAD3'});
-          gsap.to('h1', {color: '#1f2833'});
-          gsap.to('h2', {color: '#1f2833'});
-          gsap.to('p', {color: '#1f2833'});
-         
+          gsap.to('body', {backgroundColor: '#D8DAD3', duration: 2});
+          gsap.to('h1', {color: '#1f2833', duration: 1.5});
+          gsap.to('h2', {color: '#1f2833', duration: 1.5});
+          gsap.to('p', {color: '#1f2833', duration: 1.5});
         },
         onLeaveBack: () => {
-          gsap.to('body', {backgroundColor: '#1f2833'});
-          gsap.to('h1', {color: '#ffffff'}); // #ffeecf
-          gsap.to('h2', {color: '#ffffff'});
-          gsap.to('p', {color: '#ffffff'});
-          
+          gsap.to('body', {backgroundColor: '#1f2833', duration: 2});
+          gsap.to('h1', {color: '#ffeecf', duration: 1.5}); // #ffeecf
+          gsap.to('h2', {color: '#ffeecf', duration: 1.5});
+          gsap.to('p', {color: '#ffeecf', duration: 1.5});
         },
-        markers: true
+        markers: true,
+        
       });
-
     });
 
 

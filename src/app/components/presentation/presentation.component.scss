@@ -14,10 +14,8 @@ html {
 }
 
 /* TEST LIEN EXTRA TEST */ 
-
-
 .container-lien {
-  width: 443px;
+  width: 475px;
   margin: auto;
 }
 
@@ -192,13 +190,35 @@ h3 {
   margin-left: 1%;
 }
 
-.image-custom {
+@media screen and (min-width: 1800px) {
+  .image-custom {
   
-  width: 50%;
-  margin: 50px auto;
-  padding: 60px;
+    width: 50%;
+    margin: 50px auto;
+    padding: 60px;
+    
+  }
   
 }
+
+@media screen and (max-width: 1330px) {
+  
+  .carroussel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image{
+    margin: 25px auto 25px auto !important;
+    width: 75% !important;
+  }
+  
+}
+
+
+
+
+
 
 .espaceur {
   margin-bottom: 100px;
