@@ -43,7 +43,7 @@ export class PresentationComponent implements OnInit {
           gsap.to('h2', {color: '#ffeecf', duration: 1.5});
           gsap.to('p', {color: '#ffeecf', duration: 1.5});
         },
-        markers: true,
+        markers: false,
         
       });
     });

@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit {
           gsap.to('p', {color: '#ffffff'});
           
         },
-        markers: true
+        markers: false
       });
 
     });

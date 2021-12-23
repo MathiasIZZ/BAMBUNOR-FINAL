@@ -61,6 +61,12 @@ html {
   text-transform: uppercase;
 }
 
+.satelitte2 {
+  position: fixed;
+  top: 25px;
+  left: 50px;
+}
+
 .socle {
   display: flex;
   margin-top: 50px;
@@ -173,6 +179,28 @@ h3 {
   
 }
 
+
+.imageZoom {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(2) translate(30px); /* IE 9 */
+-webkit-transform: scale(2) translate(30px); /* Safari 3-8 */
+transform: scale(2) translate(30px);
+  
+}
+
+
+
 .image {
   //flex-grow: 1;
   display: flex;
@@ -213,6 +241,28 @@ h3 {
     width: 75% !important;
   }
   
+}
+
+@media  screen and (max-width: 400px) {
+  
+  .strat h1 {
+    margin-left: 50px;
+    font-family: dinproBold;
+    font-size: 17vw !important;
+    line-height: 120%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 45px !important;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
 }
 
 

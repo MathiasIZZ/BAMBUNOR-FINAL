@@ -36,7 +36,7 @@ export class CueilletteComponent implements OnInit {
           gsap.to('h4', {color: '#ffeecf'});
           gsap.to('p', {color: '#ffeecf'});
         },
-        markers: true
+        markers: false
       });
 
     });

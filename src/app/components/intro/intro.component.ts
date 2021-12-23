@@ -4,6 +4,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -24,11 +25,13 @@ export class IntroComponent implements OnInit {
 
     setTimeout( () => {
       this.chargementSpinner();
-    }, 2000);
+      }, 5000
+    );
 
-    this.createAnim();
-    this.anim1();
-
+    setTimeout( () => {
+      this.createAnim();
+      this.anim1();
+    }, 5000); 
 
     gsap.utils.toArray('h1').forEach( (elem) => {
 
@@ -49,7 +52,7 @@ export class IntroComponent implements OnInit {
           gsap.to('p', {color: '#ffffff'});
           
         },
-        markers: true
+        markers: false
       });
 
     });
@@ -75,7 +78,7 @@ export class IntroComponent implements OnInit {
 
 
   chargementSpinner() {
-    const loader = document.querySelector('.loader');
+    const loader = document.querySelector('.loader-container');
 
       loader.classList.add('fondu-out');
 

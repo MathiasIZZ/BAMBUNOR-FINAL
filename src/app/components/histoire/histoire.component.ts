@@ -35,7 +35,7 @@ export class HistoireComponent implements OnInit {
           gsap.to('h2', {color: '#D8DAD3'});
           gsap.to('p', {color: '#D8DAD3'});
         },
-        markers: true
+        markers: false
       });
 
     });
