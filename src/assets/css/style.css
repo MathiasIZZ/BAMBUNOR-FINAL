@@ -65,12 +65,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffeecf;
-  
+
   margin: 0 0 10px;
 }
 
 a {
-  color: #2B2D42;
+  color: white;
   font-weight: 500;
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
