@@ -13,13 +13,13 @@ html {
   font-family: dinpro;
 }
 
-/* TEST LIEN EXTRA TEST */ 
+/* TEST LIEN EXTRA TEST */
 .container-lien {
   width: 475px;
   margin: auto;
 }
 
-.lien-extra { 
+.lien-extra {
   display: inline;
 }
 
@@ -27,24 +27,24 @@ html {
   color: black !important;
 }
 
-.lien-extra::after {  
+.lien-extra::after {
   content: "";
   display: block;
   width: 100%;
   height: 3px;
-  margin: 0 auto; 
-  background: black; 
+  margin: 0 auto;
+  background: black;
   transform: scale(0);
   transition: transform 0.2s ease-in-out;
   margin-top: 2px;
-  
+
 }
 
 .lien-extra:hover::after {
   transform: scale(1);
 }
 
-/* FIN TEST LIEN EXTRA TEST */ 
+/* FIN TEST LIEN EXTRA TEST */
 
 
 
@@ -176,7 +176,7 @@ h3 {
 }
 
 .item {
-  
+
 }
 
 
@@ -196,7 +196,7 @@ h3 {
   -ms-transform: scale(2) translate(30px); /* IE 9 */
 -webkit-transform: scale(2) translate(30px); /* Safari 3-8 */
 transform: scale(2) translate(30px);
-  
+
 }
 
 
@@ -220,17 +220,17 @@ transform: scale(2) translate(30px);
 
 @media screen and (min-width: 1800px) {
   .image-custom {
-  
+
     width: 50%;
     margin: 50px auto;
     padding: 60px;
-    
+
   }
-  
+
 }
 
 @media screen and (max-width: 1330px) {
-  
+
   .carroussel {
     display: flex;
     flex-direction: column;
@@ -240,11 +240,11 @@ transform: scale(2) translate(30px);
     margin: 25px auto 25px auto !important;
     width: 75% !important;
   }
-  
+
 }
 
-@media  screen and (max-width: 400px) {
-  
+@media screen and (max-width: 425px) {
+
   .strat h1 {
     margin-left: 50px;
     font-family: dinproBold;
@@ -258,7 +258,36 @@ transform: scale(2) translate(30px);
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+  }
+
+  .strat {
+    margin-top: 165px;
+    margin-bottom: 25px !important;
+    position: relative;
+  }
+
+  .espaceur h2 {
+    margin-bottom: 35px;
+  }
+  .zeTitre {
+    font-size: 0.7em;
+  }
+
+  .imageZoom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-bottom: 25px;
+  }
+  h4 {
+    text-align: left;
+  }
+
+  .lien-extra {
+    font-size: 1.9em;
+  }
 
 
 
@@ -312,7 +341,7 @@ transform: scale(2) translate(30px);
 
 .zeTitre {
   color: #7B0D1E;
-  
+
 }
 
 .strat {

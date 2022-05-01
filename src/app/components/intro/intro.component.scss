@@ -27,19 +27,19 @@ h2 {
 
 .loader {
   display: block;
-  position: relative; 
+  position: relative;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 7px solid transparent;
   border-top-color: rgb(63, 165, 4);
   animation: spin 3.5s linear infinite;
-  
+
 }
 
 .loader::before, .loader::after {
-  content: ""; 
-  position:  absolute; 
+  content: "";
+  position:  absolute;
   border-radius: 50%;
   border: 7px solid transparent;
 }
@@ -270,7 +270,7 @@ video {
 
   }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 425px) {
 
   .cadre {
     margin: 30% 0 0 10%;
@@ -286,16 +286,13 @@ video {
 }
 
   .titre2 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #493c26;
   }
 
   .titre1 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     /*margin: 15% 0% 0% 0%;*/
     text-transform: uppercase;
@@ -303,10 +300,37 @@ video {
 
   .monBouton{
     position: absolute;
-    bottom: 30px;
+    bottom: 65px;
     width: 100%;
     text-align: center;
 }
+
+}
+
+@media screen and (max-width: 395px) {
+  .margin {
+    margin: 0;
+  }
+
+  .titre1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .titre2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8db642;
+  }
+
+  .monBouton {
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    text-align: center;
+  }
+
 
 }
 

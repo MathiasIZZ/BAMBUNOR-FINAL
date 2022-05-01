@@ -10,7 +10,7 @@
   background-repeat: repeat;
   background-position: top left;
   height: 100vh;
-  width: 100vw; 
+  width: 100vw;
 }
 
 .menu-burger {
@@ -162,7 +162,7 @@
 
 .Mask + .Mask span {
   transform: translateY(-49%);
-} 
+}
 
 
 .Menu-list-item:hover .Mask,
@@ -216,7 +216,7 @@
     align-items: center;
     width: 990px;
   }
-  
+
 }
 
 @media screen and (max-width: 990px){
@@ -232,7 +232,7 @@
     align-items: center;
     width: 990px;
   }
-  
+
 }
 
 
@@ -249,7 +249,7 @@
     align-items: center;
     width: 765px;
   }
-  
+
 }
 
 @media screen and (max-width: 465px){
@@ -265,7 +265,24 @@
     align-items: center;
     width: 450px;
   }
-  
+
+}
+
+@media screen and (max-width: 414px){
+  .noise {
+    z-index: 9000;
+    position: fixed;
+    background: url("../../../assets/img/noise-bg.png");
+    min-height: 150vh;
+    pointer-events: none;
+    top: 0;
+    opacity: 0.85;
+    left: 0;
+    background-repeat: repeat;
+    background-position: top left;
+    height: 100vh;
+    width: 100%;
+  }
 }
 
 
