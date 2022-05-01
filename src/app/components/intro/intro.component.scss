@@ -9,12 +9,16 @@ h2 {
 
 }
 
+li {
+  color: white;
+}
+
 
 .loader-container {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgb(31, 40, 51);;
+  background-color: rgb(31, 40, 51);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,18 +289,20 @@ video {
     margin-right: auto;
 }
 
-  .titre2 h2 {
-    font-size: 2em;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
+
 
   .titre1 h2 {
     font-size: 2em;
+
+    font-size: 1.9em;
     font-weight: 600;
-    /*margin: 15% 0% 0% 0%;*/
     text-transform: uppercase;
+    //-webkit-text-fill-color: transparent;
+    //-webkit-text-stroke-width: 2px;
+    //-webkit-text-stroke-color: #493c26;
   }
+
+
 
   .monBouton{
     position: absolute;
@@ -333,51 +339,5 @@ video {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

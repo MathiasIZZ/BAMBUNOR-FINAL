@@ -243,6 +243,7 @@ transform: scale(2) translate(30px);
 
 }
 
+
 @media screen and (max-width: 425px) {
 
   .strat h1 {
@@ -260,11 +261,6 @@ transform: scale(2) translate(30px);
     margin-left: auto;
   }
 
-  .strat {
-    margin-top: 165px;
-    margin-bottom: 25px !important;
-    position: relative;
-  }
 
   .espaceur h2 {
     margin-bottom: 35px;
@@ -288,6 +284,15 @@ transform: scale(2) translate(30px);
   .lien-extra {
     font-size: 1.9em;
   }
+
+
+  .strat {
+    position: relative;
+    margin-bottom: 45px;
+    margin-top: 150px;
+  }
+
+
 
 
 
