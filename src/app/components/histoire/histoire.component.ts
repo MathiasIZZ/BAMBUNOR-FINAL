@@ -31,7 +31,7 @@ export class HistoireComponent implements OnInit {
         },
         onLeaveBack: () => {
           gsap.to('body', {backgroundColor: '#1f2833'});
-          gsap.to('h1', {color: '#D8DAD3'});
+          gsap.to('h1', {color: '#ffeecf'});
           gsap.to('h2', {color: '#D8DAD3'});
           gsap.to('p', {color: '#D8DAD3'});
         },

@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       console.log(this.products);
     });
 
-    this.createAnim(); 
+    this.createAnim();
 
     gsap.utils.toArray('h1').forEach( (elem) => {
 
@@ -44,29 +44,19 @@ export class HomeComponent implements OnInit {
           gsap.to('h1', {color: '#1f2833'});
           gsap.to('h2', {color: '#1f2833'});
           gsap.to('p', {color: '#1f2833'});
-         
+
         },
         onLeaveBack: () => {
           gsap.to('body', {backgroundColor: '#1f2833'});
           gsap.to('h1', {color: '#ffffff'}); // #ffeecf
           gsap.to('h2', {color: '#ffffff'});
           gsap.to('p', {color: '#ffffff'});
-          
+
         },
         markers: false
       });
 
     });
-
-
-
-
-    
-
-
-
-
-
 
 
   }

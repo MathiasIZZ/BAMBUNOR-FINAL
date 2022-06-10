@@ -25,13 +25,13 @@ export class IntroComponent implements OnInit {
 
     setTimeout( () => {
       this.chargementSpinner();
-      }, 5000
+      }, 0
     );
 
     setTimeout( () => {
       this.createAnim();
       this.anim1();
-    }, 5000); 
+    }, 5000);
 
     gsap.utils.toArray('h1').forEach( (elem) => {
 
@@ -43,14 +43,14 @@ export class IntroComponent implements OnInit {
           gsap.to('h1', {color: '#1f2833'});
           gsap.to('h2', {color: '#1f2833'});
           gsap.to('p', {color: '#1f2833'});
-         
+
         },
         onLeaveBack: () => {
           gsap.to('body', {backgroundColor: '#1f2833'});
           gsap.to('h1', {color: '#ffffff'}); // #ffeecf
           gsap.to('h2', {color: '#ffffff'});
           gsap.to('p', {color: '#ffffff'});
-          
+
         },
         markers: false
       });

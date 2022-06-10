@@ -8,6 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class FooterComponent implements OnInit {
 
+
   constructor() { }
 
   newsletterForm = new FormGroup({
@@ -16,12 +17,28 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.showForm();
+    // this.showForm();
   }
 
 
-  showForm() {
-    console.log(this.newsletterForm);
+  // showForm() {
+  //   console.log(this.newsletterForm);
+  // }
+
+  display() {
+    const display = document.getElementById('info1');
+    const displayed = document.getElementById('info2');
+
+    display.style.display = 'block';
+    displayed.style.display = 'none';
+  }
+
+  display2() {
+    const display = document.getElementById('info3');
+    const displayed = document.getElementById('info4');
+
+    display.style.display = 'block';
+    displayed.style.display = 'none';
   }
 
 }

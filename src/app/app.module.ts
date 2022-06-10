@@ -27,6 +27,8 @@ import { CueilletteComponent } from './components/cueillette/cueillette.componen
 import { HistoireComponent } from './components/histoire/histoire.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 
 
@@ -64,7 +66,7 @@ export function providerConfig() {
     ContactComponent,
     CueilletteComponent,
     HistoireComponent,
-    NewsletterComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
@@ -77,6 +79,7 @@ export function providerConfig() {
     SocialLoginModule,
     NgxParallaxScrollModule,
     MatProgressSpinnerModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     {
