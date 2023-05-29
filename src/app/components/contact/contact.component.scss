@@ -25,6 +25,12 @@ section {
   font-family: dinproBold;
 }
 
+.heading h1{
+  font-size:10.5rem;
+  color: #ffeecf;
+  font-family: dinproBold;
+}
+
 .about{
   display: flex;
   align-items: center;
@@ -45,24 +51,27 @@ section {
 }
 
 .about .content h3{
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: #ffeecf;
-  font-family: dinproBold, serif;
   padding-bottom: 1rem;
   line-height: 4rem;
 }
 
+
+
 .about .content p{
   padding:1rem 0;
-  color: black;
+  color: #ffeecf;
   font-size: 1.5rem;
 }
 
 a{
-  margin-left: 2rem;
   font-size: 2rem;
   color: #7B0D1E;
-  font-weight: bold;
+}
+
+a:hover {
+  color: #7B0D1E !important;
 }
 
 .home-bg .home{
@@ -76,9 +85,9 @@ a{
 }
 
 .home-bg .home .content h3{
-  font-size: 6rem;
-  color: #ffeecf;
-  font-family: dinproBold, serif;
+  font-size: 5rem;
+  color: #7B0D1E !important;
+
 }
 
 .home-bg .home .content p{
@@ -129,6 +138,10 @@ a{
   }
 
   .heading h3{
+    font-size: 3rem;
+  }
+
+  .heading h1 {
     font-size: 3rem;
   }
 

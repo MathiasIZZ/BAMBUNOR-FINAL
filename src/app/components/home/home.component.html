@@ -1,169 +1,98 @@
-<div class="section" style="margin-top: 250px;">
-
-
-<!-- container -->
-<div class="container">
-
-  <div class="stade">
-    <div class="socle">
-      <div class="center">
-        <div class="sub">
-          <div class="satellite"><p>O comando</p></div>
-          <h1 class="fontperso"><span>Que seja chefe de um restaurante gourmet ou simples particular, convide esta delicadeza à sua mesa!</span></h1>
-        </div>
-      </div>
-    </div>
+<div class="cage">
+  <div class="drapeau">
+    <p>ENCOMENDAS</p>
   </div>
 
-
-
-  <div class="row" style="margin-top: 50px">
-    <!-- shop -->
-    <div class="col-md-4 col-xs-6">
-      <div class="shop">
-        <div class="shop-img">
-          <img src="assets/img/bambou-product.jpg" alt="">
-        </div>
-        <div class="shop-body">
-          <h3>O produto</h3>
-          <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
+  <section class="contact" id="contact">
+    <div class="heading">
+      <h1>O <br>Comando</h1>
     </div>
-    <!-- /shop -->
+  </section>
 
-    <!-- shop -->
-    <div class="col-md-4 col-xs-6">
-      <div class="shop">
-        <div class="shop-img">
-          <img src="assets/img/bambou-product.jpg" alt="">
-        </div>
-        <div class="shop-body">
-          <h3>Qualidades nutritivas</h3>
-          <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-    </div>
-    <!-- /shop -->
+  <div class="home-bg">
 
-    <!-- shop -->
-    <div class="col-md-4 col-xs-6">
-      <div class="shop">
-        <div class="shop-img">
-          <img src="assets/img/bambou-product.jpg" alt="">
-        </div>
-        <div class="shop-body">
-          <h3>Qualidades gustativas</h3>
-          <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
+    <section class="home">
+      <div class="content">
+        <p>Que seja chefe de um restaurante gourmet ou simples particular,<br> convide esta delicadeza à sua mesa!</p>
       </div>
-    </div>
-    <!-- /shop -->
+    </section>
   </div>
 
-  <div class="stade">
-
-    <div class="socle" style="margin-top: 50px;">
-      <div class="right">
-        <h2 class="fontperso"><span style="color: #493c26">« BAMBUNOR LDA » : Uma exploração inovadora na Europa.</span><span>
-          Em 2015, plantamos, em agricultura biológica, 3 hectares de bambùs no norte de portugal, e criamos BAMBUNOR LDA.</span></h2>
-        <p class="fontperso">Nossa missão: Dar a conhecer um produto raro com múltiplos benefícios nutricionais: brotos de bambu frescos.</p>
-      </div>
-      <div class="left">
-        <img src="assets/img/bambou.jpg" alt="Un Âne">
-      </div>
-    </div>
-
-
-  </div>
-
-
-
-  <!-- row
-  <div class="row">
-    <div class="col-md-12">
-      <div class="row">
-
-        <div class="col-md-4 col-sm-6" *ngFor="let p of products">
-          <div class="card my-2">
-            <img [src]="p.image" alt="{{ p.name }}" class="card-img-top" width="200px" style="cursor: pointer;" (click)="selectProduct(p.id)">
-            <div class="card-header">
-              <div class="card-title">
-                <p>{{ p.name | titlecase }}</p>
-              </div>
-            </div>
-            <div class="card-body">
-              <p>{{ p.description.substr(0, 50) }} ...</p>
-              <p class="lead">{{ p.price | currency: 'EUR' }}</p>
-            </div>
-            <div class="row d-flex justify-content-center border-primary my-3">
-              <div class="col-md-6">
-
-                <button class="btn btn-outline-primary btn-sm btn-block"
-                [class.disabled]="p.quantity < 1"
-                [class.btn-outline-danger]="p.quantity < 1"
-                        (click)="addToCart(p.id)"
-                >
-                {{ p.quantity < 1 ? "stock épuisée" : "Ajouter au panier"}} ({{ p.quantity }})
-              </button>
-              </div>
-            </div>
+  <section class="about">
+    <div class="row" style="margin-top: 50px">
+      <!-- shop -->
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img src="assets/img/bambou-product.jpg" alt="">
+          </div>
+          <div class="shop-body">
+            <h3>O <br>produto</h3>
+            <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+      <!-- /shop -->
 
--->
-
-
-  <!-- row model hors connexion -->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="row" style="justify-content: center">
-
-        <div class="col-md-4 col-sm-6" >
-          <div class="card my-2">
-            <img src="assets/img/bambou-product.jpg" alt="bambou" class="card-img-top" width="200px" style="cursor: pointer;" >
-            <div class="card-header">
-              <div class="card-title">
-                <p>Pousses De Bambous</p>
-              </div>
-            </div>
-            <div class="card-body">
-              <p>- 30 euros por kilo <br>- 20 euros à partir de 10 kg <br>- 10 euros à partir de 100 kg </p>
-              <p class="lead"></p>
-            </div>
-            <div class="row d-flex justify-content-center border-primary my-3">
-              <div class="col-md-6">
-
-                <!-- (click)="addToCart(2)" -->
-                <a href="mailto:bambunor.lda@gmail.com">
-                  <button class="btn btn-outline-primary btn-sm btn-block">Pedido</button>
-                </a>
-
-              </div>
-            </div>
+      <!-- shop -->
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img src="assets/img/bambou-product.jpg" alt="">
+          </div>
+          <div class="shop-body">
+            <h3>Qualidades nutritivas</h3>
+            <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
       </div>
+      <!-- /shop -->
+
+      <!-- shop -->
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img src="assets/img/bambou-product.jpg" alt="">
+          </div>
+          <div class="shop-body">
+            <h3>Qualidades gustativas</h3>
+            <a routerLink="/histoire" class="cta-btn">Descubra mais <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /shop -->
     </div>
+  </section>
+
+  <section class="about">
+    <div class="content">
+      <h3>« BAMBUNOR LDA » : Uma exploração inovadora na Europa.</h3>
+      <p>Nossa missão: <br>Dar a conhecer um produto raro com múltiplos benefícios nutricionais: brotos de bambu frescos.</p>
+
+    </div>
+    <div class="image">
+      <img src="assets/img/bambou.jpg" alt="">
+    </div>
+  </section>
+
+  <div class="home-bg">
+
+    <section class="home">
+      <div class="content">
+        <h3>Preços</h3>
+        <p style="text-align: center">A definir de acordo com o comando</p>
+      </div>
+    </section>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 </div>
-<!-- /container -->
-</div>
+<app-footer></app-footer>
+
+
+
+
+
+
+

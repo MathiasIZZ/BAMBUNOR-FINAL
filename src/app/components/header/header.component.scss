@@ -138,7 +138,7 @@ html {
   color: transparent;
   cursor: pointer;
   width: 100%;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 
 
@@ -147,7 +147,6 @@ html {
   display: block;
   position: absolute;
   overflow: hidden;
-  color: rgb(19,7,71);
   top: 0;
   height: 49%;
   transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
@@ -172,13 +171,13 @@ html {
 
 .Menu-list-item:hover .Mask,
 .Menu-list-item:active .Mask {
-  color: #53624e;    //#fff;
+  color: white;    //#fff;
   transform: skewX(12deg) translateX(5px);
 }
 
 .Menu-list-item:hover .Mask + .Mask,
 .Menu-list-item:active .Mask + .Mask {
-  color: #53624e;
+  //color: #53624e;
   transform: skewX(12deg) translateX(-5px);
 }
 
@@ -195,7 +194,7 @@ html {
   height: 4px;
   border-radius: 4px;
   margin-top: -2px;
-  background: rgb(19,7,71);
+  //background: rgb(19,7,71);
   transform: scale(0);
   transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
   z-index:1;
@@ -220,6 +219,14 @@ html {
     flex-direction: column;
     align-items: center;
     width: 990px;
+  }
+
+  .Menu-list-item {
+    position: relative;
+    color: transparent;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 3%;
   }
 
 }

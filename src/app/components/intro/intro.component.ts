@@ -25,7 +25,7 @@ export class IntroComponent implements OnInit {
 
     setTimeout( () => {
       this.chargementSpinner();
-      }, 0
+      }, 5000
     );
 
     setTimeout( () => {

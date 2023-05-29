@@ -51,6 +51,9 @@ const routes: Routes = [
   },
   {
     path: 'profile', component: ProfileComponent, canActivate: [ProfilGuard]
+  },
+  {
+    path: '**', component: PresentationComponent
   }
 ];
 

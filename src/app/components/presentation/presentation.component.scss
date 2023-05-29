@@ -1,10 +1,21 @@
 
+.drapeau {
+  position: fixed;
+  top: 250px;
+  right: 10px;
+  transform-origin: right top;
+  transform: rotate(90deg) translate(100%, 0);
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(255, 238, 207);
+}
 
 .cage{
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6.5rem;
+  position: relative;
 }
 
 section {
@@ -30,10 +41,6 @@ section {
   color: #ffeecf;
   font-family: dinproBold, serif;
 }
-
-
-
-
 
 
 .about{
@@ -70,7 +77,6 @@ section {
 }
 
 a{
-  margin-left: 2rem;
   font-size: 2rem;
   color: #7B0D1E;
   font-weight: bold;
@@ -166,6 +172,10 @@ a{
 
   .home-bg .home .content h3{
     font-size: 1.5rem;
+  }
+
+  .heading h1 {
+    font-size: 5rem;
   }
 
 }

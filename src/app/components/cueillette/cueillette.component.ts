@@ -28,6 +28,7 @@ export class CueilletteComponent implements OnInit {
           gsap.to('h2', {color: '#121112'});
           gsap.to('h4', {color: '#121112'});
           gsap.to('p', {color: '#121112'});
+          gsap.to('h3', {color: '#121112'});
         },
         onLeaveBack: () => {
           gsap.to('body', {backgroundColor: '#121112'});
@@ -35,6 +36,7 @@ export class CueilletteComponent implements OnInit {
           gsap.to('h2', {color: '#ffeecf'});
           gsap.to('h4', {color: '#ffeecf'});
           gsap.to('p', {color: '#ffeecf'});
+          gsap.to('h3', {color: '#ffeecf'});
         },
         markers: false
       });

@@ -22,17 +22,17 @@ export class PresentationComponent implements OnInit {
 
   ngOnInit(): void {
 
-    
+
     this.createAnim();
 
-  
+
     gsap.utils.toArray('h1').forEach( (elem) => {
 
       ScrollTrigger.create({
         trigger: 'h1',
         start: 'top 0%',
         onEnter: () => {
-          gsap.to('body', {backgroundColor: '#D8DAD3', duration: 2});
+          gsap.to('body', {backgroundColor: '#ffeecf', duration: 2});
           gsap.to('h1', {color: '#1f2833', duration: 1.5});
           gsap.to('h2', {color: '#1f2833', duration: 1.5});
           gsap.to('p', {color: '#1f2833', duration: 1.5});
@@ -44,7 +44,7 @@ export class PresentationComponent implements OnInit {
           gsap.to('p', {color: '#ffeecf', duration: 1.5});
         },
         markers: false,
-        
+
       });
     });
 
@@ -53,7 +53,9 @@ export class PresentationComponent implements OnInit {
   }
 
 
-  
+
+
+
 
   // tslint:disable-next-line:typedef
   createAnim() {
@@ -62,7 +64,7 @@ export class PresentationComponent implements OnInit {
     this.TL.play();
   }
 
-  
+
 
 
 }

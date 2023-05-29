@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
           gsap.to('h1', {color: '#1f2833'});
           gsap.to('h2', {color: '#1f2833'});
           gsap.to('p', {color: '#1f2833'});
+          gsap.to('p', {color: '#1f2833'});
 
         },
         onLeaveBack: () => {

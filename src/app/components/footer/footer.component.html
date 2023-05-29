@@ -4,27 +4,33 @@
     <div class="box-container">
 
       <div class="box">
-        <img src="assets/img/email.PNG" alt="">
-        <p id="info1" style="display: none;">bambunor.lda@gmail.com</p>
-        <p (click)="display()" id="info2">Afficher l'email</p>
+        <img (click)="display()" src="assets/img/email.PNG" alt="">
+        <p id="info1" href="mailto:bambunor.lda@gmail.com" style="display: none;">bambunor.lda@gmail.com</p>
+        <p (click)="display()" id="info2">Exibir o l'email</p>
       </div>
 
       <div class="box" id="box2">
         <img src="assets/img/localisation.PNG" alt="">
 
-        <p>Rua Barreais 10, 5225-131 Sendim PORTUGAL</p>
+        <p>Rua Barreais 10B, 5225-131 Sendim PORTUGAL</p>
       </div>
 
       <div class="box" id="box3">
-        <img src="assets/img/tel.PNG" alt="">
+        <img (click)="display2()" src="assets/img/tel.PNG" alt="">
         <p id="info3" style="display: none">964 647 808</p>
-        <p (click)="display2()" id="info4">Afficher le numéro</p>
+        <p (click)="display2()" id="info4">Exibir o número</p>
+      </div>
 
+      <div class="box" id="box4">
+        <a href="https://www.facebook.com/Bambunor-Lda-Atenor-1487848748016682" target="_blank">
+          <img src="assets/img/zefb.png" alt="">
+          <p>Bambunor Lda - Atenor</p>
+        </a>
       </div>
 
     </div>
 
-    <div class="credit"> &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved! </div>
+    <div class="credit"> &copy; copyright @ 2022 by <span>MathiasIZZ</span> | all rights reserved </div>
 
   </section>
 </div>
