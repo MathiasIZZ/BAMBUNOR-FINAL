@@ -1,0 +1,24 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name bambunor.com www.bambunor.com;
+
+    location / {
+        root /var/www/bambunor;
+        index index.html index.html;
+        try_files $uri $uri/ =404;
+    }
+
+    error_page 404 /custom_404.html;
+    location = /custom_404.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+
+    error_page 500 502 503 504 /custom_50x.html;
+    location = /custom_50x.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+}
